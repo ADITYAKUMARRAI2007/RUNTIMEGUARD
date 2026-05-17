@@ -1,0 +1,126 @@
+{
+  "python": {
+    "flask": {
+      "latest": "3.1.0",
+      "deprecated_below": "2.0.0",
+      "eol": "1.1.4"
+    },
+    "django": {
+      "latest": "5.1.0",
+      "deprecated_below": "4.0.0",
+      "eol": "3.2.0"
+    },
+    "fastapi": {
+      "latest": "0.115.0",
+      "deprecated_below": "0.95.0",
+      "eol": null
+    },
+    "requests": {
+      "latest": "2.32.0",
+      "deprecated_below": "2.25.0",
+      "eol": null
+    },
+    "sqlalchemy": {
+      "latest": "2.0.35",
+      "deprecated_below": "1.4.0",
+      "eol": "1.3.24"
+    },
+    "pydantic": {
+      "latest": "2.9.0",
+      "deprecated_below": "1.10.0",
+      "eol": null
+    },
+    "urllib3": {
+      "latest": "2.2.3",
+      "deprecated_below": "1.26.0",
+      "eol": "1.25.11"
+    },
+    "numpy": {
+      "latest": "2.1.0",
+      "deprecated_below": "1.24.0",
+      "eol": "1.21.6"
+    },
+    "pandas": {
+      "latest": "2.2.3",
+      "deprecated_below": "1.5.0",
+      "eol": "1.3.5"
+    },
+    "celery": {
+      "latest": "5.4.0",
+      "deprecated_below": "5.0.0",
+      "eol": "4.4.7"
+    },
+    "boto3": {
+      "latest": "1.35.0",
+      "deprecated_below": "1.26.0",
+      "eol": null
+    },
+    "openai": {
+      "latest": "1.51.0",
+      "deprecated_below": "0.28.0",
+      "eol": null
+    },
+    "pyyaml": {
+      "latest": "6.0.2",
+      "deprecated_below": "5.4.0",
+      "eol": null
+    },
+    "httpx": {
+      "latest": "0.27.2",
+      "deprecated_below": "0.23.0",
+      "eol": null
+    },
+    "pytest": {
+      "latest": "8.3.3",
+      "deprecated_below": "7.0.0",
+      "eol": null
+    }
+  },
+  "node": {
+    "react": {
+      "latest": "19.0.0",
+      "deprecated_below": "17.0.0",
+      "eol": "16.14.0"
+    },
+    "next": {
+      "latest": "14.2.15",
+      "deprecated_below": "13.0.0",
+      "eol": "12.3.4"
+    },
+    "express": {
+      "latest": "4.21.0",
+      "deprecated_below": "4.17.0",
+      "eol": null
+    },
+    "axios": {
+      "latest": "1.7.7",
+      "deprecated_below": "0.27.0",
+      "eol": null
+    },
+    "webpack": {
+      "latest": "5.95.0",
+      "deprecated_below": "4.46.0",
+      "eol": "3.12.0"
+    },
+    "typescript": {
+      "latest": "5.6.3",
+      "deprecated_below": "4.9.0",
+      "eol": null
+    },
+    "eslint": {
+      "latest": "9.12.0",
+      "deprecated_below": "8.0.0",
+      "eol": null
+    },
+    "lodash": {
+      "latest": "4.17.21",
+      "deprecated_below": "4.17.15",
+      "eol": null
+    },
+    "moment": {
+      "latest": "2.30.1",
+      "deprecated_below": null,
+      "eol": "2.29.4"
+    }
+  }
+}

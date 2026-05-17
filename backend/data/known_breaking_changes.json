@@ -1,0 +1,146 @@
+[
+    {
+        "pattern": "@app.on_event",
+        "description": "FastAPI deprecated @app.on_event lifecycle hooks in favor of lifespan context manager",
+        "package": "fastapi",
+        "severity": "HIGH",
+        "fix_hint": "Replace @app.on_event('startup') with async lifespan context manager",
+        "category": "deprecated_api"
+    },
+    {
+        "pattern": "requests.get(",
+        "description": "requests.get() without timeout parameter can hang indefinitely",
+        "package": "requests",
+        "severity": "MEDIUM",
+        "fix_hint": "Add timeout=10 parameter to all requests calls",
+        "category": "deprecated_api"
+    },
+    {
+        "pattern": "@app.before_first_request",
+        "description": "Flask deprecated @app.before_first_request in Flask 2.3",
+        "package": "flask",
+        "severity": "HIGH",
+        "fix_hint": "Move initialization logic to app factory or use app.before_request with a flag",
+        "category": "deprecated_api"
+    },
+    {
+        "pattern": "autocommit=True",
+        "description": "SQLAlchemy 2.0 removed autocommit mode from Session",
+        "package": "sqlalchemy",
+        "severity": "HIGH",
+        "fix_hint": "Remove autocommit=True and use explicit session.commit()",
+        "category": "breaking_change"
+    },
+    {
+        "pattern": "openai.ChatCompletion.create",
+        "description": "OpenAI SDK v1.0 replaced openai.ChatCompletion with client.chat.completions",
+        "package": "openai",
+        "severity": "HIGH",
+        "fix_hint": "Use client = OpenAI(); client.chat.completions.create(...)",
+        "category": "breaking_change"
+    },
+    {
+        "pattern": "new Buffer(",
+        "description": "Node.js Buffer() constructor is deprecated due to security issues",
+        "package": "node",
+        "severity": "HIGH",
+        "fix_hint": "Use Buffer.from(), Buffer.alloc(), or Buffer.allocUnsafe()",
+        "category": "deprecated_api"
+    },
+    {
+        "pattern": "componentWillMount",
+        "description": "React componentWillMount is deprecated since React 16.3, removed in React 19",
+        "package": "react",
+        "severity": "HIGH",
+        "fix_hint": "Use componentDidMount or useEffect(() => {}, [])",
+        "category": "framework_upgrade"
+    },
+    {
+        "pattern": "componentWillReceiveProps",
+        "description": "React componentWillReceiveProps is deprecated, removed in React 19",
+        "package": "react",
+        "severity": "HIGH",
+        "fix_hint": "Use static getDerivedStateFromProps or useEffect with dependency array",
+        "category": "framework_upgrade"
+    },
+    {
+        "pattern": "yaml.load(",
+        "description": "PyYAML yaml.load() without Loader is unsafe and deprecated",
+        "package": "pyyaml",
+        "severity": "CRITICAL",
+        "fix_hint": "Use yaml.safe_load() or yaml.load(data, Loader=yaml.SafeLoader)",
+        "category": "vulnerability"
+    },
+    {
+        "pattern": "urllib3.HTTPResponse",
+        "description": "urllib3 v2.0 changed HTTPResponse API significantly",
+        "package": "urllib3",
+        "severity": "HIGH",
+        "fix_hint": "Update to urllib3 v2.x compatible API calls",
+        "category": "breaking_change"
+    },
+    {
+        "pattern": "flask.ext.",
+        "description": "Flask extensions import path flask.ext.* removed in Flask 1.0",
+        "package": "flask",
+        "severity": "HIGH",
+        "fix_hint": "Import directly from the extension package, e.g. flask_sqlalchemy",
+        "category": "deprecated_api"
+    },
+    {
+        "pattern": "django.conf.urls.url(",
+        "description": "Django url() with regex is deprecated in Django 4.0, use path() or re_path()",
+        "package": "django",
+        "severity": "HIGH",
+        "fix_hint": "Replace url(r'^pattern$', view) with path('pattern/', view) or re_path()",
+        "category": "deprecated_api"
+    },
+    {
+        "pattern": "pkg_resources",
+        "description": "pkg_resources is deprecated in favor of importlib.resources and importlib.metadata",
+        "package": "setuptools",
+        "severity": "MEDIUM",
+        "fix_hint": "Use importlib.resources for resource access, importlib.metadata for package info",
+        "category": "deprecated_api"
+    },
+    {
+        "pattern": "datetime.utcnow()",
+        "description": "datetime.utcnow() is deprecated in Python 3.12 in favor of timezone-aware datetimes",
+        "package": "python",
+        "severity": "MEDIUM",
+        "fix_hint": "Use datetime.now(timezone.utc) instead",
+        "category": "deprecated_api"
+    },
+    {
+        "pattern": "asyncio.get_event_loop()",
+        "description": "asyncio.get_event_loop() deprecated in Python 3.10+ when no running loop",
+        "package": "python",
+        "severity": "MEDIUM",
+        "fix_hint": "Use asyncio.new_event_loop() or asyncio.run() at top level",
+        "category": "deprecated_api"
+    },
+    {
+        "pattern": "distutils",
+        "description": "distutils removed in Python 3.12, replaced by setuptools",
+        "package": "python",
+        "severity": "HIGH",
+        "fix_hint": "Replace distutils imports with setuptools equivalents",
+        "category": "breaking_change"
+    },
+    {
+        "pattern": "imp.reload",
+        "description": "imp module deprecated since Python 3.4, removed in 3.12",
+        "package": "python",
+        "severity": "HIGH",
+        "fix_hint": "Use importlib.reload() instead",
+        "category": "deprecated_api"
+    },
+    {
+        "pattern": "cgi.parse_header",
+        "description": "cgi module deprecated in Python 3.11, removed in 3.13",
+        "package": "python",
+        "severity": "MEDIUM",
+        "fix_hint": "Use email.message module for header parsing",
+        "category": "deprecated_api"
+    }
+]

@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Node
+node_modules/
+frontend/node_modules/
+sentinel-repo/node_modules/
+
+# Vite build
+frontend/dist/
+sentinel-repo/dist/
+
+# Logs
+*.log
+/tmp/
+
+# Outputs / screenshots
+outputs/screenshots/
+outputs/sandboxes/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
