@@ -121,7 +121,7 @@ interface FormFields {
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-const BACKEND = 'http://localhost:8000'
+const BACKEND = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000'
 
 // 20-step pipeline for display
 const PIPELINE_STEPS = [
